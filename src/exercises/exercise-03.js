@@ -6,6 +6,12 @@ Nota: vowels = "aeiou" (no incluyas acentos)
 */
 export function exercise03(string) {
   const vowels = "aeiou";
+  let result = 0;
+  for(let v = 0; v < string.length; v++){
+    if (vowels.includes(string[v])){
+      result += 1;
+    }
+  }
 
   // Escribe tu solución aquí
 
