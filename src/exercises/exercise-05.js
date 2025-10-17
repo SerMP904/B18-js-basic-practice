@@ -11,7 +11,12 @@ Ejemplos:
 */
 export function exercise05(string) {
   // Escribe tu solución aquí
-  const result = "";
-
+  // ESTA SOLUCIÓN ESTÁ MAL, result TIENE QUE SER UNA CONST
+  let result = "";
+  for(let l = 1; l < string.length+1; l++){
+      for(let r = 0; r < l; r++ ){
+        result = result.concat(string[l-1])
+      }
+    }
   return result;
 }
