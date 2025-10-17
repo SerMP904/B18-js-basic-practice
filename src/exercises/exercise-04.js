@@ -7,8 +7,11 @@ Atención: cuidado con vocales aisladas y con espacios en blanco dobles
 */
 export function exercise04(string) {
   const vowels = "aeiouAEIOU";
-
-  // Escribe tu solución aquí
-
+  let result = string;
+  for(let v = 0; v < string.length; v++){
+    if (vowels.includes(string[v])){
+      result = result.replace(string[v], "");
+    }
+  }
   return result;
 }

@@ -13,7 +13,5 @@ export function exercise03(string) {
     }
   }
 
-  // Escribe tu solución aquí
-
   return `Number of vowels in '${string}' is ${result}`;
 }
