@@ -11,7 +11,28 @@ Nota: los signos de puntuación, mayúsculas y espacios deben ser ignorados (no 
 */
 export function exercise06(string) {
   // Escribe tu solución aquí
+  let palindromo = 0;
+  let temporal = string.replace(/\s+/g, '');
+  for (let letra = 0; letra < temporal.length; letra++){
+    temporal = temporal.toLowerCase()
+    if (temporal[letra].match(/^[a-z]+$/)){
+      if (temporal[letra] === temporal[temporal.length - (letra+1)]){
+        palindromo +=1  
+  }}}
+  // ESTA PARTE SE PUDE MEJORAR
+  if (palindromo === temporal.length){
+    console.log(`The phrase '${string}' is a palindrome`)
+    return `The phrase '${string}' is a palindrome`;
+  } else {
+    console.log(`The phrase '${string}' is NOT a palindrome`)
+    return `The phrase '${string}' is NOT a palindrome`;
+  }
+  
   // return [condición]
   //   ? `The phrase '${string}' is a palindrome`
   //   : `The phrase '${string}' is NOT a palindrome`;
+
+  //La idea es que if (string[l] === string[string.lenght -l]) => True/False
 }
+
+
