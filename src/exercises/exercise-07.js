@@ -13,7 +13,7 @@ Un reloj muestra:
 */
 export function exercise07(date) {
   // Escribe tu solución aquí
-
+  let ms = getMils(date)
   return `Milliseconds from midnight: ${ms}`;
 }
 
@@ -23,4 +23,14 @@ function getTime(date) {
     minutes: date.getMinutes(),
     seconds: date.getSeconds(),
   };
+}
+
+console.log(getTime(new Date()))
+
+function getMils(date){
+  let hours = getTime(date).hours
+  let minutes = getTime(date).minutes
+  let seconds = getTime(date).seconds
+  let ms = (hours*3600*1000) + (minutes*60*1000) + (seconds*1000);
+  return ms;
 }
