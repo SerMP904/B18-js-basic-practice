@@ -21,10 +21,8 @@ export function exercise06(string) {
   }}}
   // ESTA PARTE SE PUDE MEJORAR
   if (palindromo === temporal.length){
-    console.log(`The phrase '${string}' is a palindrome`)
     return `The phrase '${string}' is a palindrome`;
   } else {
-    console.log(`The phrase '${string}' is NOT a palindrome`)
     return `The phrase '${string}' is NOT a palindrome`;
   }
   
