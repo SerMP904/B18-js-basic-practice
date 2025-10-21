@@ -6,6 +6,19 @@ que ocupa cada carácter en el abecedario. Para que sea más sencillo, elimina l
 */
 export function exercise10(string) {
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
-
   // Escribe tu solución aquí
+  // Esta solución es un poco pobre, pero funciona
+  let pos = [];
+  let temporal = string;
+  temporal = string.replace(/\s/g, '');
+  temporal = temporal.toLowerCase();
+  for (let x=0; x<string.length; x++){
+    for (let i=0; i<alphabet.length; i++){
+      if(temporal[x]===alphabet[i]){
+        pos.push(i+1);
+      }
+    }
+  }
+  return pos
+  
 }
