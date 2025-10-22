@@ -11,6 +11,8 @@ que recibe como parámetro dos cadenas y devuelve -1 si la primera es menor que 
 */
 export function exercise12(movies) {
   // Escribe tu solución aquí
+  movies = movies.sort((a, b) => sortStrings(a.title, b.title));
+  return movies.map((movie) => movie.title);
 }
 
 function sortStrings(a, b) {

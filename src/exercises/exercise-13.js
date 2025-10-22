@@ -7,4 +7,11 @@ valoración es superior a la valoración media de todas las películas
 */
 export function exercise13(movies) {
   // Escribe tu solución aquí
+  let resultado = [];
+  let moviesOrdenadas = movies.sort((a, b) => b.rating - a.rating);
+  moviesOrdenadas.forEach(element => {
+    resultado.push(element.title, element.description);
+  
+  });
+  return resultado;
 }
