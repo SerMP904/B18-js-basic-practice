@@ -5,6 +5,7 @@ Muestra el siguiente mensaje dependiendo de si un número es par o impar:
 Nota: even = par | odd = impar
 */
 export function exercise02(number) {
+  //Esto lo hemos hecho en clase muchas veces.
   let result = ""
   if (number % 2 === 0){
     result = "even"

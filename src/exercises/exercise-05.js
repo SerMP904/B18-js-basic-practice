@@ -11,7 +11,7 @@ Ejemplos:
 */
 export function exercise05(string) {
   // Escribe tu solución aquí
-  // ESTA SOLUCIÓN ESTÁ MAL, result TIENE QUE SER UNA CONST
+  // Originalmente "result" era una const, yo lo cambié para que funcionase mi código.
   let result = "";
   for(let l = 1; l < string.length+1; l++){
       for(let r = 0; r < l; r++ ){

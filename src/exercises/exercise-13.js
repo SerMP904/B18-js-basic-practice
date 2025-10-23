@@ -6,7 +6,7 @@ de las mejores peliculas ordenadas de mejor a peor, siendo las mejores aquellas 
 valoración es superior a la valoración media de todas las películas
 */
 export function exercise13(movies) {
-  // Escribe tu solución aquí
+  //Hacemos un sort por rating y luego lo añadimos a un array.
   let resultado = [];
   let moviesOrdenadas = movies.sort((a, b) => b.rating - a.rating);
   moviesOrdenadas.forEach(element => {

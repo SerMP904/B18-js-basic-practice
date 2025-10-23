@@ -6,7 +6,6 @@ por valoracion (propiedad "rating") de mayor a menor
 */
 
 export function exercise11(movies) {
-  // Escribe tu solución aquí
   //Demasiados parámetros pero ok
   let resultado = [];
   let moviesOrdenadas = movies.sort((a, b) => b.rating - a.rating);
