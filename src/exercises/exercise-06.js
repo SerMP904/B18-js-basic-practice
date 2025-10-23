@@ -10,7 +10,7 @@ Ejemplos:
 Nota: los signos de puntuación, mayúsculas y espacios deben ser ignorados (no incluyas los acentos). 
 */
 export function exercise06(string) {
-  // Escribe tu solución aquí
+  //Este código detecta si las letras en posiciones opuestas son iguales. Antes de eso simplifica la string quitándole espacios y mayúsuculas.
   let palindromo = 0;
   let temporal = string.replace(/\s+/g, '');
   for (let letra = 0; letra < temporal.length; letra++){
