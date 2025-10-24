@@ -17,8 +17,21 @@ Nota: evita llamar a la función con números altos en la versión recursiva.
 
 export function exercise20(n) {
   // Escribe tu solución aquí
+  return n
 }
 
 export function exercise20Iterative(n) {
   // Escribe tu solución aquí
+  let Fib = [2,3];
+  let num = Number(n)
+  if (num<2){
+    if (num===0){
+      Fib = [0];
+    } else {
+      Fib = [1]
+    }
+  } else for (let i = 1; i < num; i++){
+    Fib.push(Fib[i]+Fib[i-1])
+  }
+  return Fib[Fib.length-1];
 }
