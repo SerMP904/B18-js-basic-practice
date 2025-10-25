@@ -8,7 +8,6 @@ export function exercise14(movies, categories) {
   //Este código es excesivamente complicado, un If (element.category === "drama") sería suficiente, pero al menos da juego si queremos cambiar la categoria
   let resultado = [];
   movies.forEach(element => {
-    console.log(element.category);
     Object.values(categories).forEach(cat => {
       //Este If sirve para saber si la categoría de la pelicula se encuentra en categories
       if (element.category === cat) {

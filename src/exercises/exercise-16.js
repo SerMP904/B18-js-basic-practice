@@ -16,8 +16,6 @@ export function exercise16(movies) {
   let resultado = [];
   for (let i = 0; i < actors.length; i++) {
     for (let j = 0; j < movies.length; j++) {
-      console.log(movies[j].actors)
-      console.log(actors[i])
         if (movies[j].actors.includes(actors[i])) {
            if (i===0){
             LeoMovies.push(movies[j]); 
@@ -28,7 +26,6 @@ export function exercise16(movies) {
            }
 
         } else {
-          console.log("no contiene ningún actor de los mencionados")
         }
     }
   }
