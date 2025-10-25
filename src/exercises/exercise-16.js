@@ -26,7 +26,6 @@ export function exercise16(movies) {
            }
 
         } else {
-          console.log("no contiene ningún actor de los mencionados")
         }
     }
   }

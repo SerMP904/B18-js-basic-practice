@@ -23,5 +23,5 @@ showResult(16, exercises.exercise16(movies));
 showResult(17, exercises.exercise17("This is a hashtag"));
 showResult(18, exercises.exercise18("Hello World"));
 showResult(19, exercises.exercise19("Code deco"));
-// showResult(20, exercises.exercise20("10"));
+showResult(20, exercises.exercise20("10"));
 showResult(20, exercises.exercise20Iterative("10"));
