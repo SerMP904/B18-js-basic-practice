@@ -6,9 +6,13 @@ Nota: vowels = "aeiouAEIOU" (no incluyas los acentos)
 Atención: cuidado con vocales aisladas y con espacios en blanco dobles
 */
 export function exercise04(string) {
+  //Recorre el string y si la letra está en vowels le hace .replace ""
   const vowels = "aeiouAEIOU";
-
-  // Escribe tu solución aquí
-
+  let result = string;
+  for(let v = 0; v < string.length; v++){
+    if (vowels.includes(string[v])){
+      result = result.replace(string[v], "");
+    }
+  }
   return result;
 }

@@ -16,5 +16,22 @@ Ejemplo: "Hello world"
 Nota: siempre letras minúsculas y sin tildes (para simplificar)
 */
 export function exercise18(string) {
-  // Escribe tu solución aquí
-}
+  //Esto me costó mucho, pero al final lo saqué. letras genera keys con todas las letras del string y contadorLetras añade +1 a la key correspondiente cuando hay una coincidencia entre string in letras.
+  string = string.replace(/\s/g, '');
+  string = string.toLowerCase();
+  let letras = {
+  };
+  let contadorLetras = [];
+  for (let i = 0; i<string.length; i++){
+    contadorLetras.push(string[i]);
+    letras[string[i]] = 0
+    for (let j = 0; j<contadorLetras.length; j++){
+    if (string[i] === contadorLetras[j]){
+      letras[string[i]] += 1
+    }
+    }
+  }
+  return letras;
+  }
+
+  

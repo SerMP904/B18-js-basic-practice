@@ -5,9 +5,14 @@ Muestra el siguiente mensaje con el resultado de contar el número de vocales qu
 Nota: vowels = "aeiou" (no incluyas acentos)
 */
 export function exercise03(string) {
+  //Recorre un string y detecta si es vocal o no, y si es entonces añade 1 al contador.
   const vowels = "aeiou";
-
-  // Escribe tu solución aquí
+  let result = 0;
+  for(let v = 0; v < string.length; v++){
+    if (vowels.includes(string[v])){
+      result += 1;
+    }
+  }
 
   return `Number of vowels in '${string}' is ${result}`;
 }
